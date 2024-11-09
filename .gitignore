@@ -1,0 +1,16 @@
+# System files
+.DS_Store
+Thumbs.db
+
+# Environment files
+.env
+.vscode/
+.idea/
+
+# Node modules and other generated folders
+node_modules/
+Archive/
+
+# Specific files to exclude
+file.structure.jpg
+[H]automate.jpg

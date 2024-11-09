@@ -1,0 +1,147 @@
+/* Resetting default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    padding: 20px;
+}
+
+/* Container styling */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Header styling with gradient background */
+header {
+    background: linear-gradient(135deg, #0056b3, #003d80); /* Gradient colors */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+}
+
+header h1 {
+    font-size: 2rem; /* Adjust as necessary for title size */
+    margin: 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow for text */
+}
+
+header p {
+    font-size: 1.1rem;
+    margin-top: 5px;
+    opacity: 0.9; /* Slight opacity for subtitle text */
+}
+/* Paragraph and list styling */
+p, li {
+    margin-bottom: 1em;
+    line-height: 1.6;
+}
+
+/* Styling list items in services */
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+/* Scroll to Top Button */
+#scrollTopBtn {
+    display: none; /* Hidden by default */
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 100; /* Ensure it’s on top */
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    outline: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#scrollTopBtn:hover {
+    background-color: #003d80; /* Darker color on hover */
+}
+
+
+/* Blockquote styling */
+blockquote {
+    font-style: italic;
+    color: #555;
+    border-left: 4px solid #0056b3;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+}
+
+/* Blockquote footer styling */
+blockquote footer {
+    text-align: right;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Contact Form Styling */
+#contact {
+    text-align: center;
+}
+
+#contact form {
+    max-width: 500px; /* Centers the form within the container */
+    margin: 0 auto;
+}
+
+#contact form label {
+    display: block;
+    text-align: left;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#contact form input[type="text"],
+#contact form input[type="email"],
+#contact form textarea {
+    width: 100%; /* Full width to match the form container */
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#contact form textarea {
+    height: 150px; /* Makes the message box larger */
+    resize: vertical; /* Allows users to adjust height */
+}
+
+#contact form button[type="submit"] {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #0056b3;
+    color: #fff;
+    cursor: not-allowed; /* Indicate it's disabled */
+    opacity: 0.7; /* Slightly faded appearance */
+    margin-top: 10px;
+}
