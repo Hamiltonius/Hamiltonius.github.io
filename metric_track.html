@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[H]automate LLC - Progress Tracking</title>
+
+<!-- Favicon Links -->
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            text-align: center;
+        }
+
+        header {
+            background-color: #0056b3;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .progress-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .progress-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .progress-card {
+            background: white;
+            border-radius: 8px;
+            padding: 25px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .progress-card i {
+            font-size: 48px;
+            color: #0056b3;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #0056b3;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-top: 20px;
+            transition: background 0.3s ease;
+        }
+
+        .btn:hover {
+            background: #003d82;
+        }
+
+        .stats-container {
+            margin-top: 40px;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .stats-image {
+            max-width: 800px;
+            width: 100%;
+            margin: 20px auto;
+            display: block;
+        }
+
+        h2, h3 {
+            color: #333;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .image-section {
+            margin-top: 30px;
+        }
+
+        .image-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>[H]automate LLC - Progress Tracking</h1>
+        <p>Visualize and monitor your progress journey</p>
+    </header>
+
+    <div class="progress-container">
+        <div class="progress-grid">
+            <div class="progress-card">
+                <i class="fas fa-graduation-cap"></i>
+                <h3>Academic Progress</h3>
+                <p>Track your academic achievements and learning milestones</p>
+                <a href="#academic-stats" class="btn">View Academic Stats</a>
+            </div>
+
+            <div class="progress-card">
+                <i class="fas fa-basketball-ball"></i>
+                <h3>Athletic Progress</h3>
+                <p>Monitor your sports performance and physical development</p>
+                <a href="#athletic-stats" class="btn">View Athletic Stats</a>
+            </div>
+        </div>
+
+        <div id="athletic-stats" class="stats-container">
+            <h2>Basketball Player Statistics</h2>
+            <div class="image-container">
+                <img src="images/basketball-stats-1.jpg" alt="Basketball Player Statistics Chart 1" class="stats-image">
+                <img src="images/basketball-stats-2.jpg" alt="Basketball Player Statistics Chart 2" class="stats-image">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Add smooth scrolling to anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -145,3 +145,32 @@ blockquote footer {
     opacity: 0.7; /* Slightly faded appearance */
     margin-top: 10px;
 }
+
+/* Stats demo link styling */
+.stats-demo-link {
+    display: inline-block;
+    margin-left: 15px;
+    padding: 8px 16px;
+    background-color: #0056b3;  /* Matches your existing header gradient */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9em;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);  /* Matches your container shadow style */
+}
+
+.stats-demo-link:hover {
+    background-color: #003d80;  /* Matches your existing hover color */
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.stats-demo-link .arrow {
+    margin-left: 4px;
+    opacity: 0.9;  /* Matches your header subtitle style */
+}
+
+.stats-demo-link:hover .arrow {
+    transform: translateX(3px);
+}
