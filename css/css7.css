@@ -1,0 +1,216 @@
+/* Resetting default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    padding: 20px;
+}
+
+/* Container styling */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Header styling with gradient background */
+header {
+    background: linear-gradient(135deg, #0056b3, #003d80);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    animation: gradientAnimation 10s ease infinite;
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+header h1 {
+    font-size: 2rem; /* Adjust as necessary for title size */
+    margin: 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow for text */
+}
+
+header p {
+    font-size: 1.1rem;
+    margin-top: 5px;
+    opacity: 0.9; /* Slight opacity for subtitle text */
+}
+/* Paragraph and list styling */
+p, li {
+    margin-bottom: 1em;
+    line-height: 1.6;
+}
+
+/* Styling list items in services */
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+/* Scroll to Top Button */
+#scrollTopBtn {
+    display: none; /* Hidden by default */
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 100; /* Ensure it’s on top */
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    outline: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#scrollTopBtn:hover {
+    background-color: #003d80; /* Darker color on hover */
+}
+
+
+/* Blockquote styling */
+blockquote {
+    font-style: italic;
+    color: #555;
+    border-left: 5px solid #0056b3;
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+blockquote:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+blockquote footer {
+    text-align: right;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+nav {
+    background-color: rgba(0, 86, 179, 0.9);
+    padding: 15px;
+    border-radius: 8px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(5px);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+/* Contact Form Styling */
+#contact form input, #contact form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#contact form input:focus, #contact form textarea:focus {
+    border-color: #0056b3;
+    box-shadow: 0 0 8px rgba(0, 86, 179, 0.3);
+}
+
+#contact form button {
+    padding: 12px 24px;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#contact form button:hover {
+    background-color: #003d80;
+    transform: translateY(-2px);
+}
+
+/* Stats demo link styling */
+.stats-demo-link {
+    display: inline-block;
+    margin-left: 15px;
+    padding: 8px 16px;
+    background-color: #0056b3;  /* Matches your existing header gradient */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9em;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);  /* Matches your container shadow style */
+}
+
+.stats-demo-link:hover {
+    background-color: #003d80;  /* Matches your existing hover color */
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.stats-demo-link .arrow {
+    margin-left: 4px;
+    opacity: 0.9;  /* Matches your header subtitle style */
+}
+
+.stats-demo-link:hover .arrow {
+    transform: translateX(3px);
+}
+
+#scrollTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#scrollTopBtn:hover {
+    background-color: #003d80;
+    transform: translateY(-3px);
+}
